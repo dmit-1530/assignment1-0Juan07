@@ -1,5 +1,6 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -10,9 +11,274 @@
 
     <title>Document</title>
 
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap"
+        rel="stylesheet">
+
     <!-- Stylesheets -->
+    <link rel="stylesheet" href="css/reset.css">
+    <link rel="stylesheet" href="css/styles.css">
 </head>
+
 <body>
-    
+    <header>
+        <div class="container banner flex">
+            <div>
+                <img src="./img/klinika-icon.svg" alt="Klinika Icon">
+                <h1>Klinika</h1>
+            </div>
+            <div>
+                <a href="./index.html">Home</a>
+                <a href="./about-us.html">About</a>
+                <a href="#doctors">Our Doctors</a>
+                <a href="#contact">Contact</a>
+            </div>
+        </div>
+    </header>
+
+    <main>
+        <section>
+            <div class="container">
+                <div class="goodh flex">
+                    <img src="./img/home-doctors.jpg" alt="Group of doctors of Klinika">
+                    <div>
+                        <h2>Good Health Is The Root Of All Happiness</h2>
+
+                        <div class="flex">
+                            <div>
+                                <p>123</p>
+                                <p>Expert Doctors</p>
+                            </div>
+
+                            <div>
+                                <p>1234</p>
+                                <p>Medical Stuff</p>
+                            </div>
+
+                            <div>
+                                <p>12345</p>
+                                <p>Total Patients</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section class="background-purple">
+            <div class="container">
+                <div class="learn-about-us flex">
+                    <img src="./img/about-us-shared.jpg" alt="Group of doctors About Klinik">
+                    <div>
+                        <h2>Why You Should Trust Us? Learn About Us!</h2>
+                        <p>Our medical clinic is built on excellence, compassion, and patient-centered care. With highly
+                            qualified
+                            physicians and healthcare professionals, we bring years of experience to every patient
+                            interaction.
+                        </p>
+                        <p>We stay at the forefront of medical advancements through continuous education and
+                            cutting-edge
+                            technology. What sets us apart is our dedication to your well-being, listening to your
+                            concerns
+                            and
+                            developing personalized treatment plans.</p>
+                        <ul>
+                            <li>
+                                <img src="./img/checkmark-for-lists.svg" alt="Checkmark for the item of the list">
+                                <p>Quality health care</p>
+                            </li>
+                            <li>
+                                <img src="./img/checkmark-for-lists.svg" alt="Checkmark for the item of the list">
+                                <p>Only Qualified Doctors</p>
+                            </li>
+                            <li>
+                                <img src="./img/checkmark-for-lists.svg" alt="Checkmark for the item of the list">
+                                <p>Medical Research Professionals</p>
+                            </li>
+                        </ul>
+                        <a href="#contact" class="contact-btn">Contact Us</a>
+                    </div>
+
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="choose-us flex">
+                    <div>
+                        <h2>Why Choose Us</h2>
+                        <p>Our medical clinic combines expert care with genuine compassion. With experienced physicians,
+                            state-of-the-art facilities, and a patient-first approach, we provide personalized treatment
+                            tailored to
+                            your unique health needs. We're committed to your wellness journey every step of the way.
+                        </p>
+
+                        <div class="flex">
+                            <div class="features">
+                                <div class="features-icon">
+                                    <img src="./img/person-icon.svg" alt="Person Icon">
+                                </div>
+                                <div class="features-description">
+                                    <p>Experienced</p>
+                                    <p>Doctors</p>
+                                </div>
+                            </div>
+                            <div class="features">
+                                <div class="features-icon">
+                                    <img src="./img/check-mark-icon.svg" alt="Check mark Icon">
+                                </div>
+                                <div class="features-description">
+                                    <p>Quality</p>
+                                    <p>Services</p>
+                                </div>
+                            </div>
+                            <div class="features">
+                                <div class="features-icon">
+                                    <img src="./img/speech-bubble-icon.svg" alt="Speech bubble Icon">
+                                </div>
+                                <div class="features-description">
+                                    <p>Positive</p>
+                                    <p>Consultation</p>
+                                </div>
+                            </div>
+                            <div class="features">
+                                <div class="features-icon">
+                                    <img src="./img/headset-icon.svg" alt="Headset Icon">
+                                </div>
+                                <div class="features-description">
+                                    <p>24 Hours</p>
+                                    <p>Support</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <img src="./img/home-why-choose-us.jpg" alt="Group of doctors Why Choosing Klinik">
+                </div>
+            </div>
+        </section>
+
+        <section class="background-purple">
+            <div class="container">
+                <div class="doctors-section flex" id="doctors">
+                    <h2>Our Experience Doctors</h2>
+                    <div class="flex">
+                        <div class="doctor-card">
+                            <div>
+                                <img src="img/home-dr-abrams.jpg" alt="Portrait of the Dr Abrams">
+                            </div>
+                            <div>
+                                <h3>Dr. Abrams</h3>
+                                <p>General Surgery, Geriatrics</p>
+                            </div>
+                        </div>
+                        <div class="doctor-card">
+                            <div>
+                                <img src="./img/home-dr-bloom.jpg" alt="Portrait of the Dr Bloom">
+                            </div>
+                            <div>
+                                <h3>Dr. Bloom</h3>
+                                <p>Internal Medicine</p>
+                            </div>
+                        </div>
+                        <div class="doctor-card">
+                            <div>
+                                <img src="./img/home-dr-carre.jpg" alt="Portrait of the Dr Carre">
+                            </div>
+                            <div>
+                                <h3>Dr. Carre</h3>
+                                <p>Pediatrics</p>
+                            </div>
+                        </div>
+                        <div class="doctor-card">
+                            <div>
+                                <img src="./img/home-dr.davis.jpg" alt="Portrait of the Dr Davis">
+                            </div>
+                            <div>
+                                <h3>Dr. Davis</h3>
+                                <p>Geriatrics</p>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#">View All Doctors →</a>
+                </div>
+            </div>
+        </section>
+
+        <section>
+            <div class="container">
+                <div class="health flex">
+                    <h2>Health Care Services</h2>
+                    <div class="flex services">
+                        <div>
+                            <h3>Dental Surgery</h3>
+                            <p>Our dental surgery clinic provides a wide range of surgical procedures to address
+                                complex
+                                oral
+                                health
+                                issues. We offer tooth ...</p>
+                        </div>
+                        <div>
+                            <h3>Laboratory</h3>
+                            <p>Our medical clinic provides a comprehensive range of laboratory services to support
+                                accurate
+                                diagnosis, treatment, and monitoring of various health…</p>
+                        </div>
+                        <div>
+                            <h3>Research</h3>
+                            <p>Our research program drives medical innovation through clinical studies and trials.
+                                By
+                                participating,
+                                patients gain access to cutting-edge treatments...</p>
+                        </div>
+                    </div>
+                    <a href="#">View All Services →</a>
+                </div>
+            </div>
+        </section>
+        </div>
+    </main>
+
+    <footer>
+        <div class="container">
+            <div class="flex">
+                <img src="./img/klinika-light-icon.svg" alt="Klinika Icon">
+                <h2>Klinika</h2>
+            </div>
+            <div class="flex">
+                <div>
+                    <div class="flex" id="contact">
+                        <h3>Contact Us</h3>
+                    </div>
+                    <div class="contact-us">
+                        <div class="flex">
+                            <img src="./img/location-icon.svg" alt="Location Icon">
+                            <p>123 Street, New York, USA</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./img/phone-icon.svg" alt="Phone Icon">
+                            <p>+012 345 6789</p>
+                        </div>
+                        <div class="flex">
+                            <img src="./img/email-icon.svg" alt="Email Icon">
+                            <p>info@klinika.com</p>
+                        </div>
+                    </div>
+                </div>
+                <div class="quick-links">
+                    <h3>QUICK LINKS</h3>
+                    <a href="./index.html   ">Home</a>
+                    <a href="./about-us.html">About Us</a>
+                    <a href="#">Contact Us</a>
+                    <a href="#">Our Services</a>
+                    <a href="#doctors">Our Doctors</a>
+                </div>
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
