@@ -345,7 +345,7 @@ header .container {
 .services {
     flex-direction: column;
     gap: 1.5rem;
-    padding-bottom: 40px;
+    padding-bottom: 2.5rem;
     text-align: left;
 }
 
