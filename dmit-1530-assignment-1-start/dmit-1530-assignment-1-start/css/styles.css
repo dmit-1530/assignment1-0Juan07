@@ -39,6 +39,10 @@ h3 {
     color: var(--dark-purple);
 }
 
+body a:focus,
+body a:hover {
+    text-decoration: underline;
+}
 
 
 /* HEADER */
@@ -51,9 +55,23 @@ h3 {
     margin-bottom: 3rem;
 }
 
-.banner h1 {
+.banner .home {
+    width: 13.3125rem;
+}
+
+.banner .home a {
+    text-decoration: none;
+    font-family: var(--title-font);
     font-size: 3.125rem;
     font-weight: bold;
+    color: var(--dark-purple);
+    width: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1.5rem 0 3rem;
 }
 
 .banner img {
@@ -79,7 +97,7 @@ h3 {
     justify-content: flex-start;
 }
 
-.banner a {
+.banner .nav a {
     font-size: 1.125rem;
     font-weight: 600;
     text-decoration: none;
@@ -94,6 +112,10 @@ h3 {
     width: 5.25rem;
 }
 
+.banner .nav a:hover {
+    text-decoration: underline;
+}
+
 header .container {
     padding-bottom: 0;
 }
@@ -104,17 +126,12 @@ header .container {
     flex-direction: column;
     align-items: center;
     text-align: center;
+    padding-bottom: 4.5rem;
 }
 
 .goodh img {
     width: 100%;
     height: auto;
-}
-
-.goodh h2 {
-    font-size: 3rem;
-    font-weight: 800;
-    padding-top: 1.5rem;
 }
 
 .goodh .flex {
@@ -202,6 +219,7 @@ header .container {
 .contact-btn:focus {
     background-color: var(--dark-purple);
     color: var(--aqua);
+    text-decoration: none;
 }
 
 /* Why choose Us */
@@ -369,13 +387,26 @@ footer .container div.flex {
     width: 17.5rem;
 }
 
-footer h2 {
-    font-size: 3.125rem;
-    font-weight: 700;
-    color: var(--white);
+footer .home {
+    /* width: 13.3125rem; */
+    display: flex;
+    align-items: center;
 }
 
-footer h3 {
+footer .home img {
+    align-self: center;
+}
+
+footer .home a {
+    text-decoration: none;
+    font-family: var(--title-font);
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: var(--white);
+    /* width: 100px; */
+}
+
+footer h2 {
     font-size: 1.5rem;
     color: var(--light-purple);
     text-transform: uppercase;
@@ -542,6 +573,15 @@ footer div.container div.contact-us .flex {
 
 
 @media screen and (min-width: 720px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
     .banner {
         flex-direction: row;
         justify-content: space-between;
@@ -552,7 +592,6 @@ footer div.container div.contact-us .flex {
     .goodh {
         flex-direction: row;
         flex-wrap: wrap;
-        padding-bottom: 4.5rem;
         gap: 1.5rem;
         text-align: left;
     }
@@ -696,6 +735,10 @@ footer div.container div.contact-us .flex {
 }
 
 @media screen and (min-width: 1095px) {
+    h1 {
+        font-size: 4rem;
+    }
+
     .banner div:nth-child(2) {
         flex-wrap: nowrap;
         width: 100%;
