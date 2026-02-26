@@ -1,5 +1,840 @@
 :root {
+    --white: #FFFFFF;
+    --dark-purple: #472360;
+    --light-purple: #DDC4DD;
+    --black-grey: #1E2019;
+    --aqua: #99DDC8;
+    --grey: #F8F2F8;
+    --light-blue: #EFF5FF;
+
+    --title-font: "Roboto", sans-serif;
+    --body-font: "Open Sans", sans-serif;
+}
 
 
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 1rem;
+}
+
+.flex {
+    display: flex;
+}
+
+.background-purple {
+    background-color: var(--dark-purple);
+}
+
+body {
+    font-family: var(--body-font);
+    color: var(--black-grey);
+    font-size: 1rem;
+}
+
+h1,
+h2,
+h3 {
+    font-family: var(--title-font);
+    color: var(--dark-purple);
+}
+
+body a:focus,
+body a:hover {
+    text-decoration: underline;
+}
+
+
+/* HEADER */
+
+.banner {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1.5rem 1.5rem;
+    margin-bottom: 3rem;
+}
+
+.banner .home {
+    width: 13.3125rem;
+}
+
+.banner .home a {
+    text-decoration: none;
+    font-family: var(--title-font);
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: var(--dark-purple);
+    width: 100px;
+}
+
+h1 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1.5rem 0 3rem;
+}
+
+.banner img {
+    width: 10vw;
+    max-width: 70px;
+    height: auto;
+    padding-right: .625rem;
+}
+
+.banner div {
+    display: flex;
+    text-align: center;
+}
+
+.banner div:nth-child(2) {
+    width: 14.8125rem;
+    display: flex;
+    flex-wrap: wrap;
+    column-gap: 1.5rem;
+    row-gap: 1rem;
+    text-align: left;
+    padding-top: 1.5rem;
+    justify-content: flex-start;
+}
+
+.banner .nav a {
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: var(--dark-purple);
+    width: 8.0625rem;
+    text-align: left;
+}
+
+.banner a:nth-child(2),
+.banner a:nth-child(4) {
+    width: 5.25rem;
+}
+
+.banner .nav a:hover {
+    text-decoration: underline;
+}
+
+header .container {
+    padding-bottom: 0;
+}
+
+/* GOOD HEALTH */
+
+.goodh {
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 4.5rem;
+}
+
+.goodh img {
+    width: 100%;
+    height: auto;
+}
+
+.goodh .flex {
+    display: flex;
+    flex-direction: column;
+    gap: 1.5rem;
+    /* padding: 3rem 0 4.25rem 0; */
+}
+
+.goodh .flex div p:nth-child(1) {
+    font-size: 2rem;
+    font-weight: 700;
+    color: var(--dark-purple);
+}
+
+/* Learn A us */
+
+.learn-about-us {
+    align-items: center;
+    flex-direction: column;
+    background-color: var(--dark-purple);
+    padding: 4.5rem 0;
+    text-align: left;
+    color: var(--light-purple);
+}
+
+.learn-about-us img {
+    width: 100%;
+    height: auto;
+}
+
+.learn-about-us h2 {
+    color: var(--light-purple);
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding: 1.5rem 0;
+}
+
+.learn-about-us p {
+    padding-bottom: 1.5rem;
+}
+
+.learn-about-us ul {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.learn-about-us li {
+    display: flex;
+    align-items: flex-start;
+    column-gap: 1rem;
+}
+
+.learn-about-us li p {
+    padding: 0rem;
+}
+
+.learn-about-us li img {
+    width: 100%;
+    max-width: .8006rem;
+    height: auto;
+    align-self: center;
+}
+
+.contact-btn {
+    display: inline-block;
+    margin-top: 4.375rem;
+    text-decoration: none;
+    background-color: var(--light-purple);
+    color: var(--dark-purple);
+    cursor: pointer;
+    width: 9.2975rem;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-self: flex-start;
+    padding: 1rem .8125rem;
+    border-radius: .5rem;
+    transition: all 0.5s ease;
+}
+
+.contact-btn:hover,
+.contact-btn:focus {
+    background-color: var(--dark-purple);
+    color: var(--aqua);
+    text-decoration: none;
+}
+
+/* Why choose Us */
+
+.choose-us {
+    text-align: left;
+    padding: 4.5rem 0;
+    flex-direction: column;
+    align-items: center;
+}
+
+.choose-us h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.choose-us img {
+    padding-top: 1.5rem;
+    width: 100%;
+    height: auto;
+}
+
+.choose-us .flex {
+    display: flex;
+    gap: 1rem;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    padding-top: .3125rem;
+}
+
+.features {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    width: calc(50% - 0.5rem);
+    justify-content: left;
+}
+
+.choose-us .flex .features-icon {
+    width: 20%;
+}
+
+.features-icon img {
+    width: 100%;
+    max-width: 1.2575rem;
+    height: auto;
+    padding: 0;
+}
+
+.choose-us .flex .features-description {
+    width: 80%;
+}
+
+.features-description p:nth-child(2) {
+    font-weight: 700;
+}
+
+/* Doctors */
+
+.doctors-section {
+    background-color: var(--dark-purple);
+    align-items: center;
+    flex-direction: column;
+}
+
+.doctors-section .flex {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.doctors-section h2 {
+    color: var(--light-purple);
+    padding: 4.5rem 1.75rem 1.5rem 1.75rem;
+    font-size: 2.5rem;
+    font-weight: 500;
+    text-align: center;
+}
+
+.doctor-card {
+    background-color: var(--light-blue);
+    width: 17.375rem;
+}
+
+.doctor-card h3 {
+    color: var(--dark-purple);
+    font-size: 1.75rem;
+}
+
+.doctor-card div:nth-child(2) {
+    padding: 1.5rem;
+}
+
+.doctors-section a {
+    text-decoration: none;
+    color: var(--light-purple);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.125rem;
+    align-self: flex-end;
+    padding: 3rem 1.6875rem 4.5rem 0;
+}
+
+/* Health Care */
+
+.health {
+    padding: 4.5rem 0;
+    flex-direction: column;
+}
+
+.health h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+    padding-bottom: 1.5rem;
+}
+
+.services h3 {
+    font-size: 1.75rem;
+    font-weight: 500;
+    padding-bottom: 1rem;
+}
+
+.services {
+    flex-direction: column;
+    gap: 1.5rem;
+    padding-bottom: 2.5rem;
+    text-align: left;
+}
+
+.services div {
+    background-color: var(--grey);
+    padding: 1.5rem;
+}
+
+.health a {
+    text-decoration: none;
+    color: var(--dark-purple);
+    text-transform: uppercase;
+    font-weight: 600;
+    font-size: 1.125rem;
+    align-self: flex-end;
+}
+
+/* Footer */
+
+footer {
+    color: var(--light-purple);
+    background-color: var(--dark-purple);
+    text-align: left;
+    padding: 3rem 0 1.75rem;
+}
+
+footer .container {
+    display: flex;
+    padding-left: 3.625rem;
+    align-items: center;
+    flex-direction: column;
+    text-align: left;
+}
+
+footer .container div.flex {
+    column-gap: .625rem;
+    align-items: flex-start;
+    padding-bottom: 1.25rem;
+    width: 17.5rem;
+}
+
+footer .home {
+    /* width: 13.3125rem; */
+    display: flex;
+    align-items: center;
+}
+
+footer .home img {
+    align-self: center;
+}
+
+footer .home a {
+    text-decoration: none;
+    font-family: var(--title-font);
+    font-size: 3.125rem;
+    font-weight: bold;
+    color: var(--white);
+    /* width: 100px; */
+}
+
+footer h2 {
+    font-size: 1.5rem;
+    color: var(--light-purple);
+    text-transform: uppercase;
+    padding-top: .25rem;
+}
+
+footer .container div:nth-child(2) {
+    flex-direction: column;
+}
+
+footer div.container div.contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 17.5rem; */
+}
+
+footer div.container div.contact-us .flex {
+    flex-direction: row;
+}
+
+
+.contact-us img {
+    width: 100%;
+    max-width: 1.1169rem;
+}
+
+.contact-us p {
+    width: 100%;
+    font-size: 1.125rem;
+}
+
+.quick-links {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    /* width: 17.5rem; */
+}
+
+.quick-links h3 {
+    padding-bottom: 1.5rem;
+}
+
+.quick-links a {
+    text-decoration: none;
+    text-transform: uppercase;
+    line-height: 2.4;
+}
+
+/* About */
+
+.know-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-bottom: 4.5rem;
+}
+
+.know-us img {
+    /* QUESTIONSSSSSSSS IS IT 100% OR THE FIGMA SPECIFIED */
+    width: 100%;
+    height: auto;
+}
+
+.know-us h2 {
+    font-size: 3rem;
+    font-weight: 800;
+    padding: 1.5rem 0 .5rem;
+    align-self: flex-start;
+}
+
+.know-us p {
+    padding: 1rem 0;
+}
+
+.know-us ul,
+.know-us ul p {
+    padding: 0;
+    margin: 0;
+    width: 100%;
+}
+
+.know-us li {
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+
+.know-us li img {
+    width: .735rem;
+    height: auto;
+}
+
+.contact-btn-light {
+    display: inline-block;
+    margin-top: 3rem;
+    text-decoration: none;
+    background-color: var(--dark-purple);
+    color: var(--light-purple);
+    cursor: pointer;
+    width: 9.2975rem;
+    text-align: center;
+    font-size: 1.125rem;
+    font-weight: 600;
+    text-transform: uppercase;
+    align-self: flex-start;
+    padding: 1rem .8125rem;
+    border-radius: .5rem;
+    transition: all 0.5s ease;
+}
+
+.contact-btn-light:hover,
+.contact-btn-light:focus {
+    background-color: var(--aqua);
+    color: var(--dark-purple);
+}
+
+/* Offer */
+
+.offer {
+    text-align: center;
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+.offer p {
+    text-align: left;
+}
+
+.offer h2 {
+    font-size: 2.5rem;
+    font-weight: 600;
+}
+
+.offer .services div {
+    padding: 3rem 1.5rem;
+}
+
+.offer .flex:first-of-type {
+    flex-direction: column;
+    gap: 1.5rem;
+}
+
+/* Service */
+
+.abpage {
+    display: flex;
+}
+
+
+/* imgs carousel */
+
+.carousel {
+    flex-direction: column;
+    width: 100%;
+    gap: 1.3125rem;
+    align-items: center;
+    padding-bottom: 4.5rem;
+}
+
+.carousel img {
+    width: 100%;
+}
+
+
+@media screen and (min-width: 720px) {
+
+    h1 {
+        font-size: 3.5rem;
+    }
+
+    h3 {
+        font-size: 1.75rem;
+    }
+
+    .banner {
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    /* Good Health */
+
+    .goodh {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+        text-align: left;
+    }
+
+    .goodh img {
+        width: calc(50% - .75rem);
+    }
+
+    .goodh div {
+        width: calc(50% - .75rem);
+        flex-direction: column;
+    }
+
+    .goodh .flex {
+        flex-direction: row;
+        width: 100%;
+    }
+
+    /* Learn A us */
+
+    .learn-about-us {
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .learn-about-us img {
+        width: calc(50% - .75rem);
+    }
+
+    .learn-about-us div {
+        width: calc(50% - .75rem);
+    }
+
+    /* Why Us */
+
+    .choose-us {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        gap: 1.5rem;
+    }
+
+    .choose-us div:first-of-type {
+        width: calc(50% - .75rem);
+    }
+
+    .choose-us img {
+        width: calc(50% - .75rem);
+    }
+
+    .features-icon img {
+        width: 1.2575rem;
+        height: auto;
+        padding: 0;
+    }
+
+    .choose-us div.flex {
+        width: 100%;
+    }
+
+    .features {
+        width: calc(50% - 1rem);
+        gap: 0;
+    }
+
+    /* Doctors */
+
+    .doctors-section .flex {
+        flex-direction: row;
+        flex-wrap: wrap;
+        align-items: center;
+    }
+
+    .doctor-card {
+        display: block;
+        width: calc((100% / 2) - (1.5rem / 2));
+    }
+
+    .doctor-card img {
+        width: 100%;
+    }
+
+    .doctors-section a {
+        padding-right: 0;
+    }
+
+    /* Health Care */
+
+    .health h2 {
+        text-align: center;
+    }
+
+    .services {
+        flex-direction: row;
+    }
+
+    .services {
+        flex-wrap: wrap;
+    }
+
+    .services div {
+        width: calc((100% / 3) - (3rem / 3));
+    }
+
+    /* Footer */
+
+    footer .container {
+        align-items: flex-start;
+    }
+
+    footer .container>.flex:nth-of-type(2) {
+        flex-direction: row;
+        justify-content: space-between;
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    footer h2 {
+        padding-bottom: 1.75rem;
+    }
+
+    /* About */
+
+    .offer .services div {
+        display: flex;
+        flex-wrap: wrap;
+        width: calc((100% / 2) - (1.5rem / 2));
+    }
+
+    /* Carousel */
+
+    .carousel {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+
+    .carousel div {
+        width: calc((100% / 2) - (1.3125rem / 2));
+    }
+}
+
+@media screen and (min-width: 1095px) {
+    h1 {
+        font-size: 4rem;
+    }
+
+    .banner div:nth-child(2) {
+        flex-wrap: nowrap;
+        width: 100%;
+        justify-content: flex-end;
+    }
+
+    .banner a:nth-child(1) {
+        width: 5.25rem;
+    }
+
+    /* Good Health */
+
+    .goodh img {
+        order: 2;
+    }
+
+    .goodh .flex div {
+        position: relative;
+        padding-left: 1.5rem;
+    }
+
+    .goodh .flex div::before {
+        content: "";
+        position: absolute;
+        left: 0;
+        top: 25%;
+        width: 1px;
+        height: 70%;
+        background-color: #1E2019;
+    }
+
+    /* Learn */
+
+    .learn-about-us a {
+        margin-top: 3rem;
+    }
+
+    .learn-about-us h2 {
+        padding-top: unset;
+    }
+
+    .learn-about-us {
+        align-items: flex-start;
+    }
+
+    /* Doctors */
+
+    .doctors-section .flex {
+        gap: 1rem;
+        padding: 0;
+    }
+
+    .doctor-card {
+        display: block;
+        height: auto;
+        width: calc((100% / 4) - (3rem / 4));
+    }
+
+    /* About */
+
+    .know-us {
+        flex-direction: row;
+        gap: 2.3125rem;
+    }
+
+    .know-us img {
+        width: calc(100% - 1.1563rem);
+    }
+
+    .know-us div {
+        width: calc(100% - 1.1563rem);
+        align-self: flex-start;
+    }
+
+    .know-us h2 {
+        padding-top: unset;
+    }
+
+    /* Offer */
+
+    .offer .flex:first-of-type {
+        flex-direction: row;
+    }
+
+    .offer .flex:first-of-type p {
+        width: 100%;
+    }
+
+    .services div {
+        width: calc((100% / 3) - (3rem / 3));
+    }
+
+    /* Carousel */
+
+    .carousel div {
+        width: calc((100% / 4) - (3.9375rem / 4));
+    }
 
 }
